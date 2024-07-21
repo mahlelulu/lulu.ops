@@ -2,6 +2,17 @@ function displayTemperature(response) {
     let temperatureElement = document.querySelector("#current-temperature");
     let temperature = Math.round(response.data.temperature.current);
     let cityElement = document.querySelector("#current-city");
+    let descriptionElement= document.querySelector("#description");
+    let humidityElement= document.querySelector("#humidity");
+    let windspeedElement= document.querySelector("#wind-speed");
+    let timeElement= document.querySelector("#time");
+    let iconElement=document.querySelector("#icon")
+
+    descriptionElement.innerHTML=response.data.condition.description;
+    humidityElement.innerHTML=`${response.data.temperature.humidity}%`;
+    windspeedElement.innerHTML=`${response.data.wind.speed}km/h`;
+    timeElement.innerHTML=formatDate(date);
+    iconElement.innerHTML=`<img src="${response.data.condition.icon_url}" class="weather-app-icon"/>`
     cityElement.innerHTML = response.data.city;
     temperatureElement.innerHTML = temperature;
   }
