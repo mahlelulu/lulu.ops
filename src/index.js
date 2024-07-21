@@ -6,21 +6,22 @@ function displayTemperature(response) {
     temperatureElement.innerHTML = temperature;
   }
   
-  function search(event) {
-    event.preventDefault();
-    let searchInputElement = document.querySelector("#search-input");
-    let city = searchInputElement.value;
-  
-    let apiKey = "b2a5adcct04b33178913oc335f405433";
+  function searchCity(city) {
+    let apiKey = "ab4d0edb5b9372141t1b46d08bocdf06";
     let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
   
     axios.get(apiUrl).then(displayTemperature);
   }
+    function search(event){
+    event.preventDefault();
+    let searchInputElement = document.querySelector("#search-input");
+    let city = searchInputElement.value;
   
+  1
+    }
   function formatDate(date) {
     let minutes = date.getMinutes();
     let hours = date.getHours();
-    let day = date.getDay();
   
     if (minutes < 10) {
       minutes = `0${minutes}`;
@@ -39,9 +40,8 @@ function displayTemperature(response) {
       "Friday",
       "Saturday"
     ];
-  
-    let formattedDay = days[day];
-    return `${formattedDay} ${hours}:${minutes}`;
+    let day = days[date.getDay()];
+    return `${day} ${hours}:${minutes}`;
   }
   
   let searchForm = document.querySelector("#search-form");
