@@ -1,5 +1,5 @@
 body {
-    background: #f9f7fe;
+    background-color: #1caa8b;
     font-family: "Roboto", sans-serif;
   }
   
@@ -8,7 +8,7 @@ body {
   }
   
   .weather-app {
-    background: white;
+    background:#15162E ;
     max-width: 600px;
     margin: 60px auto;
     padding: 30px;
@@ -21,33 +21,33 @@ body {
     padding-bottom: 30px;
   }
   
-  .search-input {
+  .search-form-input {
     background-color: #f9f7fe;
     border: none;
-    color: rgba(39, 33, 66, 0.4);
-    font-size: 16px;
-    padding: 20px;
-    width: 75%;
     border-radius: 6px;
+    width: 80%;
+    font-size: 16px;
+    padding: 15px 20px;
   }
   
   .search-button {
     margin-left: 5px;
     font-size: 16px;
-    background-color: #885df1;
+    background-color: rgb(196, 213, 219);
     color: white;
     border: none;
-    padding: 20px;
-    line-height: 1;
+    padding: 15px 30px;
     border-radius: 5px;
+    margin-left: 5px;
   }
   
   main {
     padding: 30px 0;
   }
   
-  .current-temperature {
-    font-size: 48px;
+  .current-temperature-data {
+    display: flex;
+    justify-content: space-between;
   }
   
   .current-weather {
@@ -57,13 +57,13 @@ body {
   
   .current-city {
     font-size: 38px;
-    font-weight: 900;
+    line-height: 48px;
     margin: 0;
   }
   .current-details {
     color: rgba(39, 33, 66, 0.4);
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 500;
     line-height: 24px;
   }
   
@@ -83,19 +83,35 @@ body {
     font-size: 88px;
     font-weight: bold;
     margin-left: 10px;
-    font-weight: bold;
+   
   }
   
   .current-temperature-unit {
     margin-top: 6px;
     font-size: 28px;
   }
-  
+  .weather-forecast{
+    text-align: center;
+    color: antiquewhite;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .weather-forecast-temperatures{
+    text-align: center;
+    color:  antiquewhite;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .weather-forecast-temperature{
+    padding: 0 10px;
+  }
   footer {
     border-top: 1px solid #f9f7fe;
     text-align: center;
     padding-top: 15px;
   
-    color: rgba(39, 33, 66, 0.4);
+    color: rgba(238, 237, 243, 0.4);
   }
   
