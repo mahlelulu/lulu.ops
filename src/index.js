@@ -109,4 +109,5 @@ function displayTemperature(response) {
   let currentDate = new Date();
   
   currentDateELement.innerHTML = formatDate(currentDate);
+  searchCity("paris");
   
