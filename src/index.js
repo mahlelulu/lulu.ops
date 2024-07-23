@@ -101,13 +101,10 @@ function displayTemperature(response) {
     let forecast = document.querySelector("#forecast");
     forecast.innerHTML = forecastHtml;
   }
-  
-  let searchForm = document.querySelector("#search-form");
-  searchForm.addEventListener("submit", search);
-  
-  let currentDateELement = document.querySelector("#current-date");
-  let currentDate = new Date();
-  
-  currentDateELement.innerHTML = formatDate(currentDate);
-  searchCity("paris");
+  let searchFormElement = document.querySelector("#search-form");
+searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+searchCity("Paris");
+
+ 
   
