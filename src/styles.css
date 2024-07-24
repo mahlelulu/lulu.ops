@@ -1,5 +1,5 @@
 body {
-    background-color:#F9F7FE;
+    background-color :linear-gradient(#F9F7FE,#18191B);
     font-family: "Roboto", sans-serif;
   }
   
@@ -8,8 +8,7 @@ body {
   }
   
   .weather-app {
-    background: linear-gradient(#37CACA, black);
-  
+    background: #37CACA;
     max-width: 600px;
     margin: 60px auto;
     padding: 30px;
@@ -18,7 +17,7 @@ body {
   }
    .header {
     border-bottom: 1px solid #107F99;
-    padding-bottom: 30px;
+    padding-bottom:0 0 30px 0;
   }
   #37CACA
   .search-form-input {
