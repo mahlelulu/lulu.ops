@@ -8,7 +8,7 @@ body {
   }
   
   .weather-app {
-    background: linear-gradientt(#18191B,#37CACA);
+    background: linear-gradient(#18191B,#37CACA);
     max-width: 600px;
     margin: 60px auto;
     padding: 30px;
